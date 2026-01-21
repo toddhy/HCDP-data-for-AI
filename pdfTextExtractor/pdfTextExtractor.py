@@ -1,7 +1,7 @@
 import pathlib, pymupdf
 
 #Choose directory containing pdf files
-input_dir = "C:\SCIPE\CitationPapers\Mapping daily air temperature" 
+input_dir = "C:\SCIPE\HCDPPapers" 
 
 # Iterate through all .pdf files in the directory
 for pdf_path in pathlib.Path(input_dir).glob("*.pdf"):
