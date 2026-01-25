@@ -58,6 +58,6 @@ def process_directory(directory_path):
 
 # Usage
 if __name__ == "__main__":
-    target_directory = r"C:\SCIPE\CitationPapers\Optimizing automated kriging to improve spatial interpolation"
+    target_directory = r"C:\SCIPE\HCDPPapers"
     process_directory(target_directory)
 
