@@ -47,14 +47,6 @@ Converts entire PDF pages into high-quality images.
 
 To use these scripts, you will need Python installed. It is recommended to install the dependencies in a virtual environment:
 
-```bash
+```
 pip install pymupdf pillow marker-pdf
 ```
-
-## Summary of Differences
-
-| Tool | Focus | Output Type | Best For |
-| :--- | :--- | :--- | :--- |
-| **run_marker.py** | Structure & Text | `.md` + Assets | Converting papers/reports to editable text. |
-| **extractImages.py** | Embedded Assets | Individual Images | Collecting photos/charts from a PDF. |
-| **convertToImage.py** | Visual Preservation | Full Page PNGs | Creating thumbnails or reading-images of pages. |
