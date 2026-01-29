@@ -7,7 +7,7 @@ MODEL_ID = "gemini-2.0-flash"
 
 files = []
 # Searching for .txt files
-path_to_search = r"C:\SCIPE\HCDP_mentioned_in_paper\positive_match"
+path_to_search = r"path/to/files"
 print(f"Uploading files from {path_to_search}...")
 
 for p in pathlib.Path(path_to_search).rglob('*.txt'):
