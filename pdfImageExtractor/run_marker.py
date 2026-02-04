@@ -1,37 +1,53 @@
 import os
+import argparse
+
 from marker.converters.pdf import PdfConverter
 from marker.models import create_model_dict
 from marker.output import save_output
 
 
-# Initialize config with OCR disabled for faster processing
-config_dict = {
-    "disable_ocr": True,
-    "ocr_engine": None
-}
-
 # Initialize the converter once (this part is slow, so we do it outside the loop)
-print("Loading AI models (OCR disabled)...")
+print("Loading AI models")
 converter = PdfConverter(
     artifact_dict=create_model_dict(),
-    config=config_dict,
 )
 
+def main():
+    # command line argument for source directory
+    parser = argparse.ArgumentParser(description="Convert PDF files in a directory to text/data using the marker tool.")
+    parser.add_argument("source_dir", help="Path to the folder containing your PDFs")
+    parser.add_argument("--start", type=int, default=0, help="Index of the first PDF to process (0-indexed, default: 0)")
+    parser.add_argument("--count", type=int, help="Number of PDFs to process (default: all files from start index)")
+    
+    args = parser.parse_args()
+    source_dir = args.source_dir
 
+    # Get and sort all PDF files in the folder
+    all_files = sorted([f for f in os.listdir(source_dir) if f.lower().endswith(".pdf")])
+    
+    if not all_files:
+        print(f"No PDF files found in '{source_dir}'.")
+        return
 
+    # Slice the list based on start and count
+    end_index = args.start + args.count if args.count is not None else None
+    files_to_process = all_files[args.start : end_index]
 
-# Define the folder containing your PDFs
-source_dir = r"C:\SCIPE\HCDP-data-for-AI\pdfImageExtractor"
-# Define where to save the results
-output_dir = os.path.join(source_dir, "marker_output")
+    if not files_to_process:
+        print(f"No files to process for start index {args.start} and count {args.count}.")
+        return
 
-# Ensure the output directory exists
-os.makedirs(output_dir, exist_ok=True)
+    # Define where to save the results
+    output_dir = os.path.join(source_dir, "marker_output")
 
-# Loop through all files in the folder
-for filename in os.listdir(source_dir):
-    # Check if the file is a PDF
-    if filename.lower().endswith(".pdf"):
+    # Ensure the output directory exists
+    os.makedirs(output_dir, exist_ok=True)
+
+    print(f"\n📂 Found {len(all_files)} total PDF(s).")
+    print(f"▶️ Starting from index {args.start}. Processing {len(files_to_process)} file(s).")
+
+    # Loop through the subset of files
+    for filename in files_to_process:
         full_path = os.path.join(source_dir, filename)
         print(f"\n🚀 Processing: {filename}...")
         
@@ -49,7 +65,9 @@ for filename in os.listdir(source_dir):
             
             print(f"✅ Success! Saved output for {filename} to {file_specific_dir}")
 
-            
         except Exception as e:
             print(f"❌ Error processing {filename}: {e}")
+
+if __name__ == "__main__":
+    main()
 
