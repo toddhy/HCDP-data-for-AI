@@ -1,4 +1,4 @@
-# LLM Calls
+# Gemini interaction
 
 This directory contains scripts for interacting with the Gemini API using the `google-genai` File API.
 
