@@ -1,11 +1,17 @@
 import pathlib
 import argparse
+import sys
 from google import genai
 from google.genai import types
 
 def main():
     parser = argparse.ArgumentParser(description="Upload .txt files to GenAI File API")
-    parser.add_argument("--path", type=str, default=".", help="Path to search for .txt files (default: current directory)")
+    parser.add_argument("--path", type=str, required=True, help="Path to search for .txt files")
+    
+    if len(sys.argv) == 1:
+        parser.print_help()
+        sys.exit(1)
+        
     args = parser.parse_args()
 
     client = genai.Client()

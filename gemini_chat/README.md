@@ -6,6 +6,9 @@ This directory contains scripts for interacting with the Gemini API using the `g
 
 ### 1. `fileAPI_uploader.py`
 Uploads local text files to the Gemini File API.
+Documentation on file uploading here: https://ai.google.dev/api/files and https://ai.google.dev/gemini-api/docs/file-input-methods
+
+
 - **Functionality**: Scans a directory for `.txt` files and uploads them.
 - **CLI Argument**: accepts `--path` to specify the search directory (defaults to current directory).
 - **Initial Prompt**: Generates an initial summary of uploaded texts.

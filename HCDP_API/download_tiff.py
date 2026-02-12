@@ -43,7 +43,7 @@ if __name__ == "__main__":
     parser.add_argument("api_key", help="HCDP API Key")
     args = parser.parse_args()
 
-    # Example usage (adjust based on actual API)
+    # Example usage (adjust based on actual need)
     params = {
         "date": "2024-01-15",
         "variable": "station_ids",
