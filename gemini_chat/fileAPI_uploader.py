@@ -41,16 +41,9 @@ def main():
         print("\nNo .txt files found! Check the directory path and file extension.")
         return
 
-    print(f"\nUploaded {len(files)} files. Generating summary...")
+    print(f"\nUploaded {len(files)} files.")
 
-    # We can pass the file objects directly in the contents list
-    response = client.models.generate_content(
-        model=MODEL_ID,
-        contents=["Summarize these texts"] + files
-    )
-
-    print("\n--- GEMINI RESPONSE ---\n")
-    print(response.text)
+    
 
 if __name__ == "__main__":
     main()
