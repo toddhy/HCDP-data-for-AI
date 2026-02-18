@@ -1,7 +1,7 @@
 import pathlib, pymupdf
 
-#Choose directory containing pdf files
-input_dir = "C:\SCIPE\HCDPPapers" 
+# Choose directory containing pdf files
+input_dir = r"C:\SCIPE\HCDP-data-for-AI\HCDP_PublicationScraper\downloads" 
 
 # Iterate through all .pdf files in the directory
 for pdf_path in pathlib.Path(input_dir).glob("*.pdf"):
@@ -16,3 +16,8 @@ for pdf_path in pathlib.Path(input_dir).glob("*.pdf"):
         output_path.write_bytes(text.encode())
     except Exception as e:
         print(f"Error processing {pdf_path.name}: {e}")
+
+if not any(pathlib.Path(input_dir).glob("*.pdf")):
+    print(f"No PDF files found in {input_dir}")
+else:
+    print("Done processing all files.")
