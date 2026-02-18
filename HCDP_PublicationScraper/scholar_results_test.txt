@@ -1,0 +1,25 @@
+--- SerpAPI Publication Results ---
+Max Results: 70
+
+Title: Coral reefs benefit from reduced land–sea impacts under ocean warming
+Main Link: https://www.nature.com/articles/s41586-023-06394-w
+  [PDF]: https://www.nature.com/articles/s41586-023-06394-w.pdf
+------------------------------
+Title: The impact of meteorological forcing uncertainty on hydrological modeling: A global analysis of cryosphere basins
+Main Link: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2022WR033767
+  [PDF]: https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022WR033767
+  [Web]: https://scholar.google.com/scholar?output=instlink&q=info:iraogymSRCIJ:scholar.google.com/&hl=en&as_sdt=2005&sciodt=0,5&scillfp=199791988063899388&oi=lle
+------------------------------
+Title: Optimizing automated kriging to improve spatial interpolation of monthly rainfall over complex terrain
+Main Link: https://journals.ametsoc.org/view/journals/hydr/23/4/JHM-D-21-0171.1.xml
+  [HTML]: https://journals.ametsoc.org/view/journals/hydr/23/4/JHM-D-21-0171.1.xml
+  [Web]: https://scholar.google.com/scholar?output=instlink&q=info:QShU7xCPPpwJ:scholar.google.com/&hl=en&as_sdt=2005&sciodt=0,5&scillfp=5683913646981204491&oi=lle
+------------------------------
+Title: Quantifying landscape‐level biodiversity change in an island ecosystem: a 50‐year assessment of shifts in the Hawaiian avian community
+Main Link: https://nsojournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecog.07907
+  [PDF]: https://nsojournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecog.07907
+------------------------------
+Title: SC-Earth: A station-based serially complete Earth dataset from 1950 to 2019
+Main Link: https://journals.ametsoc.org/view/journals/clim/34/16/JCLI-D-21-0067.1.xml
+  [PDF]: https://journals.ametsoc.org/view/journals/clim/34/16/JCLI-D-21-0067.1.pdf
+  [Web]: https://scholar.google.com/scholar?output=instlink&q=info:jQeSdFSmd7cJ:scholar.google.com/&hl=en&as_sdt=2005&sciodt=0,5&scillfp=13948756507118415087&oi=lle

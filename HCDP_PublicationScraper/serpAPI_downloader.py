@@ -1,3 +1,14 @@
+"""
+This script uses SerpAPI to search Google Scholar for papers that cite a given paper.
+It collects the URLs for all papers that cite the given paper.
+
+To use, fill in the parameters section with the values you want. For example, in the google scholar url
+https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12275717433621282736
+everying after the ? is a parameter name and value pair, with & separating the pairs. So in the example,
+"hl="en" means that hl is a parameter name and en is it's value, in this case meaning language is english.
+Comment out or add parameters that match the url in your google scholar search.
+"""
+
 import os
 import serpapi
 import sys
@@ -41,7 +52,7 @@ def main():
                     "num": "10",
                     "start": str(start_offset),
                     "oi": "bibs",
-                    "cites": "11258593421370337345",
+                    "cites": "12275717433621282736",
                     "hl": "en",
                 }
 
