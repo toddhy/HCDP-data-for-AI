@@ -11,4 +11,5 @@ matches
 __pycache__
 *.html
 station_rainfall_data.json
-temp_raster.png
+*.png
+*.tiff

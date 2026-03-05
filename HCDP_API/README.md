@@ -21,8 +21,13 @@ Creates an aggregate, colored rainfall map from a directory of TIFF files. It av
 - **Usage**: `python tiff_visualizer.py [--input_dir DIR]`
 
 ### [unified_rainfall_map.py](unified_rainfall_map.py)
-The ultimate visualization tool. Combines both weather station markers (from JSON) and the aggregate rainfall raster (from TIFFs) onto a single interactive map. 
-- **Usage**: `python unified_rainfall_map.py`
+Combines weather station markers (from JSON) and the aggregate rainfall raster (from TIFFs) onto a single interactive map. 
+- **Features**: 
+    - **Spatial Clipping**: Automatically masks the raster data to a circular area around the stations.
+    - **Relative Gradients**: Normalizes the color scale based on local rainfall values for better visual contrast.
+    - **Visual Aid**: Adds a dashed blue circle showing the clipping boundary.
+- **Usage**: `python unified_rainfall_map.py [--lat LAT] [--lon LON] [--radius KM]`
+- **Note**: This script processes **local data only** (JSON/TIFFs) and never triggers new downloads.
 
 ### [map_HCDP_stations.py](map_HCDP_stations.py)
 Takes the JSON output from `fetch_station_data.py` and generates an interactive Folium map (`station_map.html`) showing the locations of all identified stations with clickable popups.
