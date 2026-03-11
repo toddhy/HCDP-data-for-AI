@@ -25,8 +25,16 @@ Single-turn interaction with already uploaded files.
 - **Functionality**: Fetches `ACTIVE` files and prompts for a single question.
 - **Usage**: `python prompt_existing.py`
 
+### 4. `langchain_agent.py` (Recommended Agent)
+A modern LangChain-based agent that uses local scripts as tools.
+- **Functionality**:
+    - **Geocoding**: Automatically resolves place names (e.g., "Honolulu") using `geopy`.
+    - **Station Finder**: Finds weather stations within a specified radius.
+    - **Interactive Mapping**: Generates station maps and unified gridded rainfall maps.
+    - **Tool Chaining**: Executes multi-step workflows in a single turn.
+- **Usage**: `python langchain_agent.py`
+
 ## Requirements
-- Python 3.10+
-- `google-genai` library installed
-- An active Google GenAI API Key (`GOOGLE_API_KEY`) configured in your environment.
-- Model: These scripts use `gemini-2.5-flash`.
+- Python **3.14+** compatible (uses `bind_tools` pattern).
+- Libraries: `langchain`, `langchain-google-genai`, `geopy`, `pandas`, `folium`, `rasterio`.
+- An active Google Gemini API Key (`GOOGLE_API_KEY`) configured in a `.env` file.

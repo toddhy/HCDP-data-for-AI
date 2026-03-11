@@ -2,15 +2,17 @@
 Unified Rainfall Map Generator
 
 This script creates an interactive Folium map that combines:
-1. Weather station markers with average monthly rainfall (from station_rainfall_data.json).
+1. Weather station markers (colored by average rainfall from JSON, or grey location markers).
 2. A raster (gridded) rainfall overlay (aggregated from TIFF files in the downloads directory).
 
 Usage:
     python unified_rainfall_map.py [--json PATH] [--tiff_dir DIR] [--output FILENAME]
-                                   [--lat LAT] [--lon LON] [--radius KM]
+                                   [--lat LAT] [--lon LON] [--radius KM] [--no_json]
 
-Note: This script DOES NOT download new data. It only processes existing local files.
-If JSON or TIFF data is missing, the corresponding layer will be omitted from the map.
+Notes:
+- This script DOES NOT download new data. It only processes existing local files.
+- Use --no_json to omit station rainfall data and just map station locations (markers will be grey).
+- If JSON or TIFF data is missing, the script will attempt to fall back to available data.
 """
 import os
 import glob
@@ -25,6 +27,8 @@ import folium
 from folium.raster_layers import ImageOverlay
 import branca
 import argparse
+import pandas as pd
+from station_finder import get_nearby_stations
 
 # --- Configuration ---
 DEFAULT_JSON = "station_rainfall_data.json"
@@ -34,26 +38,51 @@ OUTPUT_MAP = "unified_rainfall_map.html"
 def get_station_data(json_path):
     """
     Extracts and averages station rainfall data from JSON.
+    Returns a list of dicts with lat, lon, name, skn, and avg_rainfall.
     """
-    if not os.path.exists(json_path):
+    if not json_path or not os.path.exists(json_path):
         return []
 
-    with open(json_path, 'r') as f:
-        data = json.load(f)
+    try:
+        with open(json_path, 'r') as f:
+            data = json.load(f)
 
+        stations = []
+        for entry in data:
+            if 'station_info' not in entry or 'api_response' not in entry:
+                continue
+            info = entry['station_info']
+            api_res = entry['api_response']
+            if isinstance(api_res, dict) and "error" not in api_res:
+                values = [v for v in api_res.values() if isinstance(v, (int, float))]
+                if values:
+                    avg_rf = sum(values) / len(values)
+                    stations.append({
+                        'lat': info['lat'], 'lon': info['lon'],
+                        'name': info['name'], 'skn': info['skn'],
+                        'avg_rainfall': avg_rf
+                    })
+        return stations
+    except Exception as e:
+        print(f"Warning: Error reading JSON station data: {e}")
+        return []
+
+def get_location_only_stations(lat, lon, radius_km):
+    """
+    Fetches station locations using station_finder without rainfall data.
+    """
+    print(f"Fetching station locations within {radius_km}km of ({lat}, {lon})...")
+    df = get_nearby_stations(lat, lon, radius_km)
+    if df.empty:
+        return []
+    
     stations = []
-    for entry in data:
-        info = entry['station_info']
-        api_res = entry['api_response']
-        if isinstance(api_res, dict) and "error" not in api_res:
-            values = [v for v in api_res.values() if isinstance(v, (int, float))]
-            if values:
-                avg_rf = sum(values) / len(values)
-                stations.append({
-                    'lat': info['lat'], 'lon': info['lon'],
-                    'name': info['name'], 'skn': info['skn'],
-                    'avg_rainfall': avg_rf
-                })
+    for _, row in df.iterrows():
+        stations.append({
+            'lat': row['lat'], 'lon': row['lng'],
+            'name': row['name'], 'skn': row['skn'],
+            'avg_rainfall': None # No rainfall data
+        })
     return stations
 
 def haversine_dist(lat1, lon1, lat2, lon2):
@@ -107,17 +136,24 @@ def process_tiffs(tiff_dir):
     count = 0
 
     for tiff_path in tiff_files:
-        with rasterio.open(tiff_path) as src:
-            data = src.read(1).astype(float)
-            if src.nodata is not None:
-                data[data == src.nodata] = np.nan
-            
-            if aggregated_data is None:
-                aggregated_data = data
-                meta = src.meta
-            else:
-                aggregated_data = np.nansum([aggregated_data, data], axis=0)
-            count += 1
+        try:
+            with rasterio.open(tiff_path) as src:
+                data = src.read(1).astype(float)
+                if src.nodata is not None:
+                    data[data == src.nodata] = np.nan
+                
+                if aggregated_data is None:
+                    aggregated_data = data
+                    meta = src.meta
+                else:
+                    if data.shape != aggregated_data.shape:
+                        print(f"Warning: Skipping {os.path.basename(tiff_path)} - shape {data.shape} does not match {aggregated_data.shape}")
+                        continue
+                    aggregated_data = np.nansum([aggregated_data, data], axis=0)
+                count += 1
+        except Exception as e:
+            print(f"Warning: Could not process {os.path.basename(tiff_path)}: {e}")
+            continue
 
     if aggregated_data is not None:
         aggregated_data /= count
@@ -128,34 +164,51 @@ def process_tiffs(tiff_dir):
     
     return aggregated_data, folium_bounds, meta
 
-def create_unified_map(json_path, tiff_dir, output_file, center_lat=None, center_lon=None, radius_km=None):
+def create_unified_map(json_path, tiff_dir, output_file, center_lat=None, center_lon=None, radius_km=None, omit_json_data=False):
     """
     Creates a map with both raster overlay and station markers.
     """
     print("Loading data...")
-    stations = get_station_data(json_path)
+    
+    # 1. Background context for center/radius if not provided
+    # Fallback default (Honolulu)
+    default_lat, default_lon = 21.3069, -157.8583
+    
+    # 2. Try to get station data (with rainfall)
+    stations_with_data = []
+    if not omit_json_data and json_path:
+        stations_with_data = get_station_data(json_path)
+
+    # 3. Process TIFFs
     raster_data, raster_bounds, raster_meta = process_tiffs(tiff_dir)
 
-    if not stations and raster_data is None:
-        print("No data found (JSON or TIFFs).")
-        return
-
-    # Determine map center and radius for clipping
+    # 4. Determine Area of Interest
     if center_lat and center_lon:
         center = [center_lat, center_lon]
-    elif stations:
-        center = [np.mean([s['lat'] for s in stations]), np.mean([s['lon'] for s in stations])]
+    elif stations_with_data:
+        center = [np.mean([s['lat'] for s in stations_with_data]), np.mean([s['lon'] for s in stations_with_data])]
     elif raster_bounds:
         center = [(raster_bounds[0][0] + raster_bounds[1][0]) / 2, (raster_bounds[0][1] + raster_bounds[1][1]) / 2]
     else:
-        center = [21.3069, -157.8583] # Honolulu default
+        center = [default_lat, default_lon]
 
-    if radius_km is None and stations:
-        # Auto-calculate radius to cover all stations
-        distances = [haversine_dist(center[0], center[1], s['lat'], s['lon']) for s in stations]
-        radius_km = max(distances) * 1.1 if distances else 10.0
-    elif radius_km is None:
-        radius_km = 10.0
+    if radius_km is None:
+        if stations_with_data:
+            distances = [haversine_dist(center[0], center[1], s['lat'], s['lon']) for s in stations_with_data]
+            radius_km = max(distances) * 1.1 if distances else 10.0
+        else:
+            radius_km = 50.0 # Default radius for statewide/larger view if not specified
+
+    # 5. Get location-only stations for markers if we want them
+    # We combine them or replace them
+    final_stations = stations_with_data
+    if not final_stations or omit_json_data:
+        # Fetch just locations
+        final_stations = get_location_only_stations(center[0], center[1], radius_km)
+
+    if not final_stations and raster_data is None:
+        print("No data found to map (Stations or Raster).")
+        return
 
     print(f"Masking raster to {radius_km:.2f}km radius around {center}...")
     
@@ -170,12 +223,13 @@ def create_unified_map(json_path, tiff_dir, output_file, center_lat=None, center
     
     # Calculate LOCAL range for normalization
     vals = []
-    if stations:
-        # Use only stations within the circle for the scale if possible
-        for s in stations:
+    has_rainfall_data = False
+    for s in final_stations:
+        if s['avg_rainfall'] is not None:
             d = haversine_dist(center[0], center[1], s['lat'], s['lon'])
             if d <= radius_km:
                 vals.append(s['avg_rainfall'])
+                has_rainfall_data = True
     
     if raster_data is not None:
         r_min, r_max = np.nanmin(raster_data), np.nanmax(raster_data)
@@ -202,17 +256,23 @@ def create_unified_map(json_path, tiff_dir, output_file, center_lat=None, center
         ImageOverlay(image="temp_unified.png", bounds=raster_bounds, opacity=0.6, interactive=True, zindex=1).add_to(m)
 
     # 2. Add Station Markers
-    if stations:
-        print(f"Adding {len(stations)} station markers...")
+    if final_stations:
+        print(f"Adding {len(final_stations)} station markers...")
         station_group = folium.FeatureGroup(name="Weather Stations").add_to(m)
-        for s in stations:
-            popup_text = f"<b>{s['name']}</b><br>SKN: {s['skn']}<br>Avg Rainfall: {s['avg_rainfall']:.2f} mm"
+        for s in final_stations:
+            if s['avg_rainfall'] is not None:
+                popup_text = f"<b>{s['name']}</b><br>SKN: {s['skn']}<br>Avg Rainfall: {s['avg_rainfall']:.2f} mm"
+                f_color = colormap(s['avg_rainfall'])
+            else:
+                popup_text = f"<b>{s['name']}</b><br>SKN: {s['skn']}<br>(No rainfall data loaded)"
+                f_color = '#666666' # Grey for location-only
+            
             folium.CircleMarker(
                 location=[s['lat'], s['lon']],
                 radius=6,
                 popup=folium.Popup(popup_text, max_width=200),
                 color='black', weight=1, fill=True,
-                fill_color=colormap(s['avg_rainfall']),
+                fill_color=f_color,
                 fill_opacity=0.9
             ).add_to(station_group)
 
@@ -243,9 +303,10 @@ def main():
     parser.add_argument("--lat", type=float, help="Center latitude for clipping")
     parser.add_argument("--lon", type=float, help="Center longitude for clipping")
     parser.add_argument("--radius", type=float, help="Radius in km for clipping")
+    parser.add_argument("--no_json", action="store_true", help="Omit station rainfall JSON and just map locations")
     
     args = parser.parse_args()
-    create_unified_map(args.json, args.tiff_dir, args.output, args.lat, args.lon, args.radius)
+    create_unified_map(args.json, args.tiff_dir, args.output, args.lat, args.lon, args.radius, args.no_json)
 
 if __name__ == "__main__":
     main()

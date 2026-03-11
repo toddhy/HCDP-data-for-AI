@@ -1,5 +1,6 @@
 """
-Takes a start and end date in YYYY-MM format and downloads rainfall TIFF files for each month in that range.
+Takes a start and end date in YYYY-MM format and downloads rainfall TIFF files for each month in that range. 
+The data is from https://api.hcdp.ikewai.org/raster/timeseries
 example: python tiff_downloader.py 2022-01 2022-12
 """
 
@@ -26,7 +27,7 @@ def download_tiff(date_str, output_path):
         'location': 'hawaii',
         'returnEmptyNotFound': 'false',
         'datatype': 'rainfall',
-        'extent': 'bi',
+        'extent': 'statewide',
         'production': 'new',
         'period': 'month'
     }

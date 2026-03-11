@@ -13,3 +13,4 @@ __pycache__
 station_rainfall_data.json
 *.png
 *.tiff
+HCDP_API/__init__.py

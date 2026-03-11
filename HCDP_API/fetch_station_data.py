@@ -1,7 +1,7 @@
 # Code is generated with Gemini 3 Flash
 """
 Takes lat and long coordinates and a radius in km. Runs a query to HCDP API with chosen parameters 
-in the function fetch_rainfall_data(). Returns results to a json file.
+in the function fetch_rainfall_data(). Returns results to a json file named in OUTPUT_FILE variable.
 """
 
 import json
@@ -36,7 +36,7 @@ def fetch_rainfall_data(lat, lon):
         'lat': lat,
         'lng': lon,
         'datatype': 'rainfall',
-        'extent': 'bi',
+        'extent': 'statewide',
         'production': 'new',
         'period': 'month'
     }
