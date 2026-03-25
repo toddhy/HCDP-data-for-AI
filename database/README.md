@@ -1,6 +1,6 @@
 # TileDB Climate Database
 
-This directory contains the high-performance storage layer for the HCDP AI workspace. It utilizes **TileDB Dense Arrays** to store multi-dimensional raster data, enabling rapid spatial and temporal queries that are significantly faster than reading individual TIFF files.
+This directory contains the high-performance storage layer for the HCDP AI workspace. It utilizes **TileDB Dense Arrays** to store multi-dimensional raster data, enabling rapid spatial and temporal queries that are significantly faster than reading individual TIFF files. Dates are ISO 8601 formatted in YYYY-MM.
 
 ## Directory Structure
 

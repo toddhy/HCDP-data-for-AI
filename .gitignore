@@ -14,11 +14,25 @@ station_rainfall_data.json
 *.png
 *.tiff
 HCDP_API/__init__.py
+.clinerules
+.cursorrules
+.windsurfrules
+
+#Large Data Files
 monthly_rainfall
 monthly_temperature
-
+monthly_spi
+monthly_min_temperature
+monthly_max_temperature
 rainfall_array
 temperature_array
 spi_array
+min_temp_array
+max_temp_array
+database.7z
+tiff_files.7z
+
+
+
 
 

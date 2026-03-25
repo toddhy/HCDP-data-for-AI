@@ -173,6 +173,12 @@ def query_historical_climate_data(latitude: float, longitude: float, month: str,
         if variable.lower() == "temperature":
             array_name = "temperature_array"
             unit = "degrees Celsius"
+        elif variable.lower() == "max_temp":
+            array_name = "max_temp_array"
+            unit = "degrees Celsius"
+        elif variable.lower() == "min_temp":
+            array_name = "min_temp_array"
+            unit = "degrees Celsius"
         elif variable.lower() == "spi":
             array_name = "spi_array"
             unit = "units (SPI)"
