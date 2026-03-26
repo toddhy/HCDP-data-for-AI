@@ -28,7 +28,8 @@ def create_array_if_not_exists(array_uri, template_tiff):
     schema = tiledb.ArraySchema(
         domain=dom,
         sparse=False,
-        attrs=[tiledb.Attr(name="value", dtype=np.float32, fill=np.nan)]
+        attrs=[tiledb.Attr(name="value", dtype=np.float32, fill=np.nan, 
+                          filters=tiledb.FilterList([tiledb.ZstdFilter(level=7)]))]
     )
 
     tiledb.DenseArray.create(array_uri, schema)

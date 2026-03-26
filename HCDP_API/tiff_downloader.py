@@ -28,9 +28,10 @@ def download_tiff(date_str, output_path):
         'returnEmptyNotFound': 'false',
         'datatype': 'temperature',
         'extent': 'statewide',
-        #'production': 'new', #for rainfall only. values new/legacy
         'period': 'month',
-        'aggregation': 'min' #for temperature, comment out otherwise. values min/max/mean
+        'aggregation': 'max' #for temperature, comment out otherwise. values min/max/mean
+        #'production': 'new', #for rainfall only. values new/legacy
+        #'timescale': 'timescale036' #for spi drought index. Values are timescale001, timescale003, timescale006, timescale009, timescale012, timescale024, timescale036, timescale048, timescale060
     }
     
     headers = {
