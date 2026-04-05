@@ -1,0 +1,1873 @@
+[
+    {
+        "station_info": {
+            "skn": 705.8,
+            "name": "Hono Miller&Ber",
+            "lat": 21.30628018,
+            "lon": -157.8572569,
+            "distance_km": 0.12816771864779405
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 704.0,
+            "name": "Hono Substation",
+            "lat": 21.30572477,
+            "lon": -157.8611456,
+            "distance_km": 0.3224563162992492
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 705.9,
+            "name": "Hono Nuuanu&Ber",
+            "lat": 21.31155767,
+            "lon": -157.8594789,
+            "distance_km": 0.5321134044842155
+        },
+        "api_response": {
+            "2020-02-01T10:00:00.000Z": 0,
+            "2021-08-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 704.11,
+            "name": "Press Bldg",
+            "lat": 21.30239152,
+            "lon": -157.8561459,
+            "distance_km": 0.5487445396444857
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 705.4,
+            "name": "Us Naval Station",
+            "lat": 21.30405826,
+            "lon": -157.8630899,
+            "distance_km": 0.5882806659693518
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 705.12,
+            "name": "Aloha Tower",
+            "lat": 21.3034,
+            "lon": -157.8627,
+            "distance_km": 0.5993627467690917
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 705.0,
+            "name": "BERETANIA PUMP STN 705",
+            "lat": 21.305169,
+            "lon": -157.8522571,
+            "distance_km": 0.654936928131086
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 705.7,
+            "name": "Hono Pauoa Vall",
+            "lat": 21.31350185,
+            "lon": -157.8530902,
+            "distance_km": 0.9111319300728938
+        },
+        "api_response": {
+            "2020-02-01T10:00:00.000Z": 0,
+            "2021-08-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 705.11,
+            "name": "Foster Gardens",
+            "lat": 21.31627955,
+            "lon": -157.8583678,
+            "distance_km": 1.0429820226726025
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 705.2,
+            "name": "Nuuanu Valley",
+            "lat": 21.31822382,
+            "lon": -157.8553123,
+            "distance_km": 1.296630496943979
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 709.0,
+            "name": "PUNCHBOWL CRATER 709",
+            "lat": 21.31016855,
+            "lon": -157.846146,
+            "distance_km": 1.310480247456117
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 706.1,
+            "name": "Punchbowl",
+            "lat": 21.31350172,
+            "lon": -157.8472571,
+            "distance_km": 1.3592311726993547
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 706.3,
+            "name": "Kinau Street",
+            "lat": 21.30350227,
+            "lon": -157.8455906,
+            "distance_km": 1.3697731283091812
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 705.5,
+            "name": "Honolulu",
+            "lat": 21.29683603,
+            "lon": -157.8472575,
+            "distance_km": 1.600310445280382
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 705.1,
+            "name": "Craigside",
+            "lat": 21.32211236,
+            "lon": -157.849479,
+            "distance_km": 1.9225646253427475
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 709.2,
+            "name": "Pensacola Exp S",
+            "lat": 21.31044619,
+            "lon": -157.8400349,
+            "distance_km": 1.9327914680761291
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 705.3,
+            "name": "Us Exp Station",
+            "lat": 21.32127903,
+            "lon": -157.8472568,
+            "distance_km": 1.9659712260057336
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 706.5,
+            "name": "Niuhelewai HCC JD",
+            "lat": 21.32180556,
+            "lon": -157.8694722,
+            "distance_km": 2.0214940318932633
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 706.4,
+            "name": "Makiki Reservoir",
+            "lat": 21.31433481,
+            "lon": -157.837257,
+            "distance_km": 2.3313828323484005
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 707.0,
+            "name": "H S P A EXPERIMENTAL STATION",
+            "lat": 21.30294651,
+            "lon": -157.8361461,
+            "distance_km": 2.3367757794137844
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 705.6,
+            "name": "Honolulu-Smith",
+            "lat": 21.29655801,
+            "lon": -157.837813,
+            "distance_km": 2.413936752791062
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 704.9,
+            "name": "Alewa Hts",
+            "lat": 21.33016769,
+            "lon": -157.857812,
+            "distance_km": 2.587742863673635
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 774.5,
+            "name": "Wyllie Street",
+            "lat": 21.32822312,
+            "lon": -157.846701,
+            "distance_km": 2.658075118910061
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 707.4,
+            "name": "Maryknoll School 707.4",
+            "lat": 21.301,
+            "lon": -157.833,
+            "distance_km": 2.7018521157557123
+        },
+        "api_response": {
+            "2015-01-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 774.2,
+            "name": "Insane Asylum",
+            "lat": 21.32850137,
+            "lon": -157.8708673,
+            "distance_km": 2.732055397338009
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 707.1,
+            "name": "Oahu College",
+            "lat": 21.30377967,
+            "lon": -157.8305905,
+            "distance_km": 2.8914741723686164
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 706.2,
+            "name": "Hono College Hil",
+            "lat": 21.3135014,
+            "lon": -157.8305903,
+            "distance_km": 2.9628752615526026
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 704.1,
+            "name": "Farrington High",
+            "lat": 21.33016799,
+            "lon": -157.8722562,
+            "distance_km": 2.9637803595168513
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 704.2,
+            "name": "Bishop Museum Pk",
+            "lat": 21.33127901,
+            "lon": -157.8703118,
+            "distance_km": 2.9827373615323545
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 706.0,
+            "name": "Pacific Heights",
+            "lat": 21.32655639,
+            "lon": -157.83809,
+            "distance_km": 3.026549884179551
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 707.3,
+            "name": "Alihilani",
+            "lat": 21.30600174,
+            "lon": -157.828646,
+            "distance_km": 3.073623215058737
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 707.5,
+            "name": "HONOLULU 2.0 SW",
+            "lat": 21.3004,
+            "lon": -157.8293,
+            "distance_km": 3.090023895143051
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 718.4,
+            "name": "Halau Ku Mana",
+            "lat": 21.31284,
+            "lon": -157.82912,
+            "distance_km": 3.0941447869048586
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 774.1,
+            "name": "Jack Lane Nurse",
+            "lat": 21.33377833,
+            "lon": -157.8436453,
+            "distance_km": 3.352144938284147
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 773.8,
+            "name": "HONOLULU 3.9 WNW",
+            "lat": 21.3372,
+            "lon": -157.8614,
+            "distance_km": 3.384473725355128
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 718.5,
+            "name": "Liljestrand House",
+            "lat": 21.32406,
+            "lon": -157.83115,
+            "distance_km": 3.398617702722256
+        },
+        "api_response": {
+            "2011-06-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 773.0,
+            "name": "KAPALAMA 773",
+            "lat": 21.33933391,
+            "lon": -157.8567005,
+            "distance_km": 3.6102899101724706
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 708.0,
+            "name": "Tantalus",
+            "lat": 21.32516743,
+            "lon": -157.8289234,
+            "distance_km": 3.6587152963214806
+        },
+        "api_response": {
+            "2011-06-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 701.1,
+            "name": "Fort De Russy 701.1",
+            "lat": 21.283,
+            "lon": -157.833,
+            "distance_km": 3.7327018332929565
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 773.3,
+            "name": "KaliRaingage",
+            "lat": 21.33823889,
+            "lon": -157.8739194,
+            "distance_km": 3.8419978870306664
+        },
+        "api_response": {
+            "2008-09-01T10:00:00.000Z": 0,
+            "2017-03-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 775.13,
+            "name": "Waolani 0504",
+            "lat": 21.33756,
+            "lon": -157.84092,
+            "distance_km": 3.855374882694261
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 774.8,
+            "name": "Nuuanu",
+            "lat": 21.33683364,
+            "lon": -157.838923,
+            "distance_km": 3.8868159500295207
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 711.2,
+            "name": "Fort Derussy",
+            "lat": 21.28017,
+            "lon": -157.833369,
+            "distance_km": 3.9377451310686027
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 710.0,
+            "name": "NUTRIDGE 710",
+            "lat": 21.31572334,
+            "lon": -157.8211458,
+            "distance_km": 3.9719335726060305
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 775.3,
+            "name": "DOWSETT",
+            "lat": 21.3376686,
+            "lon": -157.8361452,
+            "distance_km": 4.119687557187937
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 774.6,
+            "name": "Oahu Country Cb",
+            "lat": 21.34016683,
+            "lon": -157.8405895,
+            "distance_km": 4.129014256792969
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 704.12,
+            "name": "Alewa Mauka",
+            "lat": 21.3429446,
+            "lon": -157.846145,
+            "distance_km": 4.2010771373056945
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 780.12,
+            "name": "HONOLULU 2.2 NW",
+            "lat": 21.3361,
+            "lon": -157.8325,
+            "distance_km": 4.205283744402256
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 780.5,
+            "name": "TANTALUS 2 780.5",
+            "lat": 21.32711168,
+            "lon": -157.8239234,
+            "distance_km": 4.210885082789514
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 775.11,
+            "name": "Nuuanu Res1 0502",
+            "lat": 21.339124,
+            "lon": -157.836859,
+            "distance_km": 4.215618548234531
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 712.0,
+            "name": "Manoa-Keller",
+            "lat": 21.3068348,
+            "lon": -157.8175349,
+            "distance_km": 4.2230461866158215
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 775.0,
+            "name": "NUUANU RES 5 775",
+            "lat": 21.339125,
+            "lon": -157.835905,
+            "distance_km": 4.268599030133201
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 718.6,
+            "name": "Iolani School",
+            "lat": 21.2875687,
+            "lon": -157.82265,
+            "distance_km": 4.273363077751952
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 711.0,
+            "name": "Dole-Pri",
+            "lat": 21.29711306,
+            "lon": -157.8183684,
+            "distance_km": 4.27757814321153
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 712.3,
+            "name": "Manoa Road",
+            "lat": 21.31016795,
+            "lon": -157.8167015,
+            "distance_km": 4.3246203821723626
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 773.1,
+            "name": "Kalihi Ug Shaft",
+            "lat": 21.34350079,
+            "lon": -157.8736447,
+            "distance_km": 4.369179973409922
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 713.0,
+            "name": "UNIV OF HAWAII 713",
+            "lat": 21.29933514,
+            "lon": -157.8167017,
+            "distance_km": 4.390792793674013
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 712.4,
+            "name": "Puuhonua",
+            "lat": 21.31183452,
+            "lon": -157.8155903,
+            "distance_km": 4.458307807179536
+        },
+        "api_response": {
+            "2020-02-01T10:00:00.000Z": 0,
+            "2021-08-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 710.2,
+            "name": "Puu Makani",
+            "lat": 21.31683429,
+            "lon": -157.8161458,
+            "distance_km": 4.504345562225616
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 712.1,
+            "name": "MANOA 712.1",
+            "lat": 21.31044568,
+            "lon": -157.8147571,
+            "distance_km": 4.527946727875881
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 718.9,
+            "name": "UH Manoa HIG ROOF",
+            "lat": 21.29774,
+            "lon": -157.81561,
+            "distance_km": 4.5383588308391225
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 716.4,
+            "name": "Manoa Valley",
+            "lat": 21.30211275,
+            "lon": -157.8144795,
+            "distance_km": 4.570738798260466
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 774.7,
+            "name": "Country Club",
+            "lat": 21.34683332,
+            "lon": -157.8472559,
+            "distance_km": 4.585370645461532
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 775.1,
+            "name": "Nuuanu Valley",
+            "lat": 21.34683332,
+            "lon": -157.8472559,
+            "distance_km": 4.585370645461532
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 714.2,
+            "name": "Kaliula",
+            "lat": 21.32016749,
+            "lon": -157.815868,
+            "distance_km": 4.636492051851684
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 780.11,
+            "name": "Tantalus-Simms",
+            "lat": 21.32988922,
+            "lon": -157.8205899,
+            "distance_km": 4.668339832298395
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 714.0,
+            "name": "TANTALUS 714",
+            "lat": 21.32683377,
+            "lon": -157.8172567,
+            "distance_km": 4.794671478736099
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 711.7,
+            "name": "H-1RainGageatKapiolaniAve",
+            "lat": 21.28944444,
+            "lon": -157.8155556,
+            "distance_km": 4.835040511634331
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 773.7,
+            "name": "Kalihi",
+            "lat": 21.35044447,
+            "lon": -157.8558669,
+            "distance_km": 4.848478388837817
+        },
+        "api_response": {
+            "2012-11-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 711.6,
+            "name": "ManoaRGatKanewaiFld,Honolulu",
+            "lat": 21.29322222,
+            "lon": -157.8127222,
+            "distance_km": 4.960725221937212
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 775.12,
+            "name": "Upper Waolani 0503",
+            "lat": 21.34666,
+            "lon": -157.83641,
+            "distance_km": 4.968622517355773
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 712.2,
+            "name": "Oahu Avenue",
+            "lat": 21.31572312,
+            "lon": -157.8111459,
+            "distance_km": 4.98230718116471
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 714.4,
+            "name": "Kukui Malu",
+            "lat": 21.32544489,
+            "lon": -157.814479,
+            "distance_km": 4.985753120289598
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 780.3,
+            "name": "TANTALUS MAUKA",
+            "lat": 21.32822253,
+            "lon": -157.8158678,
+            "distance_km": 4.994113991371228
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 780.8,
+            "name": "Dowsett Hilands1",
+            "lat": 21.34211089,
+            "lon": -157.8283674,
+            "distance_km": 4.994230082145777
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 774.3,
+            "name": "Kalihi Valley",
+            "lat": 21.35183333,
+            "lon": -157.8572557,
+            "distance_km": 4.997529062109655
+        },
+        "api_response": {
+            "2012-10-01T10:00:00.000Z": 0,
+            "2012-11-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 712.5,
+            "name": "Liloa Rise",
+            "lat": 21.31683416,
+            "lon": -157.8103126,
+            "distance_km": 5.09231318204164
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 780.6,
+            "name": "Nuuanu",
+            "lat": 21.34183306,
+            "lon": -157.8255896,
+            "distance_km": 5.154453538580204
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 716.5,
+            "name": "Manoa Waena",
+            "lat": 21.31655635,
+            "lon": -157.8086459,
+            "distance_km": 5.2545960050762375
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 780.0,
+            "name": "Tantalus Peak",
+            "lat": 21.33211117,
+            "lon": -157.8153122,
+            "distance_km": 5.261868219857912
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 711.1,
+            "name": "Kaimuki Pumping",
+            "lat": 21.28683578,
+            "lon": -157.8122578,
+            "distance_km": 5.266008700035695
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 780.2,
+            "name": "Tantalus",
+            "lat": 21.33016681,
+            "lon": -157.8139234,
+            "distance_km": 5.274844012165248
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 780.1,
+            "name": "Tantalus Peak",
+            "lat": 21.33016681,
+            "lon": -157.8139234,
+            "distance_km": 5.274844012165248
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 714.1,
+            "name": "Keahi",
+            "lat": 21.32044504,
+            "lon": -157.808368,
+            "distance_km": 5.3872626922631115
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 710.1,
+            "name": "Clements",
+            "lat": 21.32016724,
+            "lon": -157.8072569,
+            "distance_km": 5.489488621415117
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 759.0,
+            "name": "HNL AIRPORT",
+            "lat": 21.32183585,
+            "lon": -157.9089224,
+            "distance_km": 5.500642808300291
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 716.11,
+            "name": "Woodlawn-Woolsey",
+            "lat": 21.30711232,
+            "lon": -157.8047573,
+            "distance_km": 5.546773981035441
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 716.14,
+            "name": "St Louis Hts Mid",
+            "lat": 21.29933495,
+            "lon": -157.8047575,
+            "distance_km": 5.610272037428678
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 776.2,
+            "name": "Kalihi Valley 4",
+            "lat": 21.35572164,
+            "lon": -157.8428114,
+            "distance_km": 5.660800077945383
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 782.1,
+            "name": "Halfway House",
+            "lat": 21.34766603,
+            "lon": -157.825034,
+            "distance_km": 5.693916447645147
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 717.2,
+            "name": "WAIKIKI 717.2",
+            "lat": 21.27183682,
+            "lon": -157.8180917,
+            "distance_km": 5.705730167817772
+        },
+        "api_response": {
+            "2014-06-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 721.3,
+            "name": "Kalaepohaku",
+            "lat": 21.29294641,
+            "lon": -157.8050355,
+            "distance_km": 5.732151608290895
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 716.1,
+            "name": "Woodlawn",
+            "lat": 21.31350082,
+            "lon": -157.8022572,
+            "distance_km": 5.8518068172417665
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 783.3,
+            "name": "Old Pali Road",
+            "lat": 21.34849928,
+            "lon": -157.8236451,
+            "distance_km": 5.855022916017648
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 784.0,
+            "name": "PAUOA FLATS 784",
+            "lat": 21.33516,
+            "lon": -157.81058,
+            "distance_km": 5.857324354376636
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 770.0,
+            "name": "MOANALUA 770",
+            "lat": 21.34794527,
+            "lon": -157.8950332,
+            "distance_km": 5.941971125388317
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 716.2,
+            "name": "Manoa",
+            "lat": 21.32516687,
+            "lon": -157.8039236,
+            "distance_km": 5.987780209806158
+        },
+        "api_response": {
+            "2011-06-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 774.4,
+            "name": "Kalihi Duncan",
+            "lat": 21.36099943,
+            "lon": -157.8528111,
+            "distance_km": 6.04238676400181
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 716.6,
+            "name": "Rhodes Gardens",
+            "lat": 21.3240558,
+            "lon": -157.8028125,
+            "distance_km": 6.056154401703747
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 775.14,
+            "name": "Napuumaia 0505",
+            "lat": 21.35489,
+            "lon": -157.83063,
+            "distance_km": 6.057178147414044
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 716.13,
+            "name": "St Louis Hts Upp",
+            "lat": 21.30572338,
+            "lon": -157.7980907,
+            "distance_km": 6.238747651477277
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 782.3,
+            "name": "Nuuanu Upper",
+            "lat": 21.3502007,
+            "lon": -157.8184,
+            "distance_km": 6.345281007041839
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 715.3,
+            "name": "Kaimuki-Dorr",
+            "lat": 21.28350242,
+            "lon": -157.802258,
+            "distance_km": 6.3623612641101195
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 780.4,
+            "name": "Nuuanu Valley",
+            "lat": 21.34655468,
+            "lon": -157.813923,
+            "distance_km": 6.369572241353229
+        },
+        "api_response": {
+            "2012-11-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 716.3,
+            "name": "Manoa Upper",
+            "lat": 21.32405572,
+            "lon": -157.7994791,
+            "distance_km": 6.3848021237268755
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 774.0,
+            "name": "Kalihi USGS",
+            "lat": 21.36294355,
+            "lon": -157.8444778,
+            "distance_km": 6.394089299976254
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 785.11,
+            "name": "WAIHI STREAM NEAR HONOLULU 3NE",
+            "lat": 21.3283,
+            "lon": -157.801,
+            "distance_km": 6.394754520202652
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 782.2,
+            "name": "Luakaha",
+            "lat": 21.34905459,
+            "lon": -157.8161452,
+            "distance_km": 6.405993227957222
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 721.1,
+            "name": "Palolo Valley",
+            "lat": 21.29683497,
+            "lon": -157.7972577,
+            "distance_km": 6.422132661447072
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 717.1,
+            "name": "Kapiolani Park",
+            "lat": 21.26655931,
+            "lon": -157.8139251,
+            "distance_km": 6.42335444219004
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 785.1,
+            "name": "Manoa Val Mauka",
+            "lat": 21.32905543,
+            "lon": -157.8005901,
+            "distance_km": 6.465707760403695
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 785.12,
+            "name": "Lyon 0501",
+            "lat": 21.333,
+            "lon": -157.8025,
+            "distance_km": 6.467747761326476
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 785.4,
+            "name": "Manoa Lyon Arbo",
+            "lat": 21.3330002,
+            "lon": -157.8024,
+            "distance_km": 6.477016535781077
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 785.2,
+            "name": "Lyon Arboretum",
+            "lat": 21.33294411,
+            "lon": -157.8022567,
+            "distance_km": 6.48750466652222
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 784.3,
+            "name": "Lyon weather station by greenhouse",
+            "lat": 21.33292,
+            "lon": -157.80217,
+            "distance_km": 6.49434791207497
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 785.0,
+            "name": "Manoa-HSPA",
+            "lat": 21.33238858,
+            "lon": -157.8017011,
+            "distance_km": 6.511943087228421
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 782.0,
+            "name": "LUAKAHA LOWER 782",
+            "lat": 21.34961009,
+            "lon": -157.8150341,
+            "distance_km": 6.529764910181336
+        },
+        "api_response": {
+            "2012-11-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 717.7,
+            "name": "Waikiki Kalakaua",
+            "lat": 21.26044879,
+            "lon": -157.8192028,
+            "distance_km": 6.564175438592978
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 784.1,
+            "name": "Lyon Aihualama Stream above diversion",
+            "lat": 21.33517,
+            "lon": -157.80258,
+            "distance_km": 6.572238426900829
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 784.2,
+            "name": "Lyon Aihualama Stream below diversion",
+            "lat": 21.3342,
+            "lon": -157.802,
+            "distance_km": 6.57458739412
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 716.7,
+            "name": "Waahila",
+            "lat": 21.3101675,
+            "lon": -157.7944795,
+            "distance_km": 6.62135335704781
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 721.4,
+            "name": "Palolo Fire Stn",
+            "lat": 21.2996006,
+            "lon": -157.7944,
+            "distance_km": 6.669423945474857
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 784.11,
+            "name": "Kalawahine 0506",
+            "lat": 21.34522,
+            "lon": -157.80556,
+            "distance_km": 6.928121341709406
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 715.4,
+            "name": "Leahi Hospital",
+            "lat": 21.27322517,
+            "lon": -157.8019806,
+            "distance_km": 6.933168769307841
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 768.3,
+            "name": "Tripler",
+            "lat": 21.36516649,
+            "lon": -157.8822552,
+            "distance_km": 6.9377707546524805
+        },
+        "api_response": {
+            "2018-08-01T10:00:00.000Z": 0,
+            "2020-08-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 721.5,
+            "name": "Honolulu HI US AU956-KH6CTR",
+            "lat": 21.298,
+            "lon": -157.792,
+            "distance_km": 6.939449897900863
+        },
+        "api_response": {
+            "2015-01-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 758.1,
+            "name": "Salt Lake",
+            "lat": 21.34683476,
+            "lon": -157.9105887,
+            "distance_km": 7.003740452603892
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 718.3,
+            "name": "Anuenu School",
+            "lat": 21.3046,
+            "lon": -157.79045,
+            "distance_km": 7.0335911076625806
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 713.1,
+            "name": "Manini Way",
+            "lat": 21.28850196,
+            "lon": -157.7922579,
+            "distance_km": 7.141321475330399
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 776.0,
+            "name": "Kalihi Tunnel 2",
+            "lat": 21.36794293,
+            "lon": -157.8336445,
+            "distance_km": 7.2521357759223015
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 716.18,
+            "name": "PaloloRainGageatPukeleStream",
+            "lat": 21.30684722,
+            "lon": -157.7880889,
+            "distance_km": 7.27348549478539
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 711.8,
+            "name": "Kaimuki NF",
+            "lat": 21.27796944,
+            "lon": -157.7951056,
+            "distance_km": 7.294856545579947
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 716.0,
+            "name": "MANOA TUN 2 716",
+            "lat": 21.32794416,
+            "lon": -157.7914236,
+            "distance_km": 7.312063673389011
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 783.0,
+            "name": "NUUANU RES 4 783",
+            "lat": 21.35266525,
+            "lon": -157.807534,
+            "distance_km": 7.31749966565219
+        },
+        "api_response": {
+            "2015-05-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 716.8,
+            "name": "Woodlawn-BWS",
+            "lat": 21.32322218,
+            "lon": -157.7889237,
+            "distance_km": 7.412237548217861
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 720.1,
+            "name": "New Collins",
+            "lat": 21.2960015,
+            "lon": -157.7867021,
+            "distance_km": 7.515766392257446
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 717.4,
+            "name": "Diamond Head 2",
+            "lat": 21.26017065,
+            "lon": -157.8055918,
+            "distance_km": 7.538118030010399
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 703.0,
+            "name": "HONOLULU INTERNATIONAL AIRPORT",
+            "lat": 21.324,
+            "lon": -157.9294,
+            "distance_km": 7.606622651671306
+        },
+        "api_response": {
+            "2011-06-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 721.0,
+            "name": "WILHELMINA RISE 721",
+            "lat": 21.29766804,
+            "lon": -157.7853133,
+            "distance_km": 7.63062211967658
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 720.0,
+            "name": "MATSONIA DRIVE 720",
+            "lat": 21.2935016,
+            "lon": -157.7855911,
+            "distance_km": 7.6785037515684165
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 720.3,
+            "name": "Maunalua Hts",
+            "lat": 21.29544593,
+            "lon": -157.7847577,
+            "distance_km": 7.72459484789762
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 772.5,
+            "name": "Moanalua Stream",
+            "lat": 21.3736,
+            "lon": -157.8801,
+            "distance_km": 7.752762887296458
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 703.1,
+            "name": "HONOLULU FIRE STATION 703.1, HI US",
+            "lat": 21.3287,
+            "lon": -157.9298,
+            "distance_km": 7.7930475670250905
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 765.2,
+            "name": "Aliamanu Crater",
+            "lat": 21.35905623,
+            "lon": -157.9089218,
+            "distance_km": 7.818280742722769
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 717.3,
+            "name": "Diamond Head 1",
+            "lat": 21.26350355,
+            "lon": -157.7989252,
+            "distance_km": 7.818559081738819
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 772.0,
+            "name": "MoanaluaRaingagenrHonolulu",
+            "lat": 21.37823611,
+            "lon": -157.8700306,
+            "distance_km": 8.024715945406712
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 720.2,
+            "name": "Waiamao",
+            "lat": 21.29961229,
+            "lon": -157.7805909,
+            "distance_km": 8.091115245730391
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 715.0,
+            "name": "WAIALAE KAHALA",
+            "lat": 21.27433592,
+            "lon": -157.7880917,
+            "distance_km": 8.125416520523029
+        },
+        "api_response": {
+            "2014-06-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 720.7,
+            "name": "HONOLULU 2.6 SSE",
+            "lat": 21.2863,
+            "lon": -157.7826,
+            "distance_km": 8.170318017815045
+        },
+        "api_response": {
+            "2016-08-01T10:00:00.000Z": 0,
+            "2021-09-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 715.1,
+            "name": "Waialae Kahala",
+            "lat": 21.27350261,
+            "lon": -157.7872584,
+            "distance_km": 8.244135741115326
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 720.6,
+            "name": "HONOLULU 2.7 SSE",
+            "lat": 21.285,
+            "lon": -157.7816,
+            "distance_km": 8.3110493235076
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 777.0,
+            "name": "KALIHI RES SITE 777",
+            "lat": 21.37516437,
+            "lon": -157.8222555,
+            "distance_km": 8.458980088585674
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 713.4,
+            "name": "Waialaenui R Upp",
+            "lat": 21.29683462,
+            "lon": -157.7772577,
+            "distance_km": 8.470093002078604
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 772.2,
+            "name": "Moanalua",
+            "lat": 21.38322065,
+            "lon": -157.8578106,
+            "distance_km": 8.48662043930712
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 718.7,
+            "name": "Waiakeakua Mauka",
+            "lat": 21.33644,
+            "lon": -157.78267,
+            "distance_km": 8.49480816278755
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 722.5,
+            "name": "Waialae-Paul",
+            "lat": 21.27016945,
+            "lon": -157.7861473,
+            "distance_km": 8.518510611733852
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 772.7,
+            "name": "Moanalua",
+            "lat": 21.38433171,
+            "lon": -157.8580882,
+            "distance_km": 8.610041255659473
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 721.2,
+            "name": "Aha Maka",
+            "lat": 21.30766722,
+            "lon": -157.7736463,
+            "distance_km": 8.770047348441105
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 717.0,
+            "name": "BLACK POINT 717",
+            "lat": 21.25655947,
+            "lon": -157.7925363,
+            "distance_km": 8.81832121921014
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 789.0,
+            "name": "Konahuanui",
+            "lat": 21.35294252,
+            "lon": -157.788923,
+            "distance_km": 8.823213735496694
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 722.1,
+            "name": "Thorne",
+            "lat": 21.26405879,
+            "lon": -157.7861474,
+            "distance_km": 8.864488844206482
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 720.5,
+            "name": "Halehoola",
+            "lat": 21.29683455,
+            "lon": -157.773091,
+            "distance_km": 8.898153572071362
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 777.3,
+            "name": "Wilson Tunnel",
+            "lat": 21.3771,
+            "lon": -157.8166,
+            "distance_km": 8.921005604479323
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 718.1,
+            "name": "Olympus",
+            "lat": 21.33516556,
+            "lon": -157.7772568,
+            "distance_km": 8.963891969174986
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 722.3,
+            "name": "Pahoa Place",
+            "lat": 21.27016935,
+            "lon": -157.7805917,
+            "distance_km": 9.027862952204204
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 722.0,
+            "name": "Kahala",
+            "lat": 21.26183672,
+            "lon": -157.7855918,
+            "distance_km": 9.047603981615996
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 718.8,
+            "name": "Pukele Mauka",
+            "lat": 21.33509,
+            "lon": -157.77585,
+            "distance_km": 9.097610645621472
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 772.6,
+            "name": "MoanaluaRaingagenrKaneohe",
+            "lat": 21.38823333,
+            "lon": -157.8486389,
+            "distance_km": 9.099033335984501
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 718.0,
+            "name": "PALOLO VALLEY 718",
+            "lat": 21.32183297,
+            "lon": -157.7717015,
+            "distance_km": 9.12305201686667
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 758.0,
+            "name": "Fleet Weather C",
+            "lat": 21.3482266,
+            "lon": -157.9347556,
+            "distance_km": 9.155958656230252
+        },
+        "api_response": {
+            "2012-11-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 722.4,
+            "name": "Kahala",
+            "lat": 21.26766951,
+            "lon": -157.7794806,
+            "distance_km": 9.258414109244104
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 722.2,
+            "name": "Kahala-Arnold",
+            "lat": 21.27016929,
+            "lon": -157.777814,
+            "distance_km": 9.285433574443074
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 767.0,
+            "name": "Field 89",
+            "lat": 21.37516649,
+            "lon": -157.9105881,
+            "distance_km": 9.324654977382412
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 771.2,
+            "name": "HALAWA SHAFT",
+            "lat": 21.38016617,
+            "lon": -157.9039214,
+            "distance_km": 9.417849249800732
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 786.1,
+            "name": "Nuuanu Pali",
+            "lat": 21.36571962,
+            "lon": -157.7928116,
+            "distance_km": 9.422569462704738
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 786.0,
+            "name": "Nuuanu Pali",
+            "lat": 21.36655292,
+            "lon": -157.7936448,
+            "distance_km": 9.425601279126004
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 771.9,
+            "name": "NHalawaRainGagenrHonolulu",
+            "lat": 21.382,
+            "lon": -157.9033333,
+            "distance_km": 9.564925662058373
+        },
+        "api_response": {
+            "2009-12-01T10:00:00.000Z": 0,
+            "2011-08-01T10:00:00.000Z": 0,
+            "2016-04-01T10:00:00.000Z": 0
+        }
+    },
+    {
+        "station_info": {
+            "skn": 720.4,
+            "name": "Aonapo",
+            "lat": 21.29905641,
+            "lon": -157.7647577,
+            "distance_km": 9.729892245120622
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 772.3,
+            "name": "MoanaluaRGNo.1atalt1000",
+            "lat": 21.39338889,
+            "lon": -157.8401111,
+            "distance_km": 9.799871774260279
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 765.0,
+            "name": "Field 87",
+            "lat": 21.36683485,
+            "lon": -157.9291994,
+            "distance_km": 9.916590209539187
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 771.4,
+            "name": "Halawa 2",
+            "lat": 21.39516492,
+            "lon": -157.8739213,
+            "distance_km": 9.947052364856145
+        },
+        "api_response": {}
+    },
+    {
+        "station_info": {
+            "skn": 771.0,
+            "name": "North Halawa",
+            "lat": 21.390084,
+            "lon": -157.894273,
+            "distance_km": 9.971736107988418
+        },
+        "api_response": {}
+    }
+]

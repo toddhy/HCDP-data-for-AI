@@ -9,10 +9,23 @@ browser_session
 downloads
 matches
 __pycache__
-*.html
-station_rainfall_data.json
 *.png
 *.tiff
+
+# Generated Maps (Root Only)
+/gridded_map.html
+/gridded_rainfall_map.html
+/station_map.html
+/unified_rainfall_map.html
+/unified_temperature_map.html
+/verify_*.html
+/*.html
+/HCDP_API/*.html
+/gemini_chat/*.html
+/database/*.html
+
+# Data Files (Root Only)
+
 HCDP_API/__init__.py
 .clinerules
 .cursorrules
@@ -22,6 +35,8 @@ HCDP_API/__init__.py
 server.log
 package-lock.json
 node_modules
+pymupdf-venv
+sync.sh
 
 #Large Data Files
 monthly_rainfall
